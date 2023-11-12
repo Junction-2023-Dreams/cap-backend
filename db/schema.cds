@@ -6,7 +6,7 @@ entity Users : cuid, managed {
     lastname: String;
     email: String;
     passwordHash: String;
-    isDoctor: Boolean;
+    role: String;
 }
 
 entity Patients : cuid, managed {

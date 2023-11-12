@@ -19,11 +19,21 @@ module.exports = async function() {
             throw req.reject(400);
         }
 
-        const token = jwt.sign(user[0], process.env.JWT_SIGN_TOKEN, {
+        console.log(user[0])
+
+        const token = jwt.sign({
+            email: user[0].email,
+            firstname: user[0].firstname,
+            lastname: user[0].lastname,
+            role: user[0].role,
+        }, process.env.JWT_SIGN_TOKEN, {
             expiresIn: "2h"
         })
         return {
-            ...user[0],
+            email: user[0].email,
+            firstname: user[0].firstname,
+            lastname: user[0].lastname,
+            role: user[0].role,
             token: token
         };
     })
