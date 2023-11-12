@@ -7,6 +7,10 @@ entity Users : cuid, managed {
     email: String;
     passwordHash: String;
     role: String;
+    participations: Composition of ActivityParticipations on participations.patient = $self;
+    doctors: Composition of ActivityParticipations on doctors.patient = $self;
+    medications: Composition of PatientMedications on medications.patient = $self;
+    painPoints: Composition of PatientMedications on painPoints.patient = $self;
 }
 
 entity Patients : cuid, managed {
@@ -38,6 +42,7 @@ entity Medications : cuid, managed {
     description: String;
     sideeffects: String;
     defaultAmount: String;
+    patients: Composition of PatientMedications on patients.medication = $self;
 }
 
 entity PatientMedications : cuid, managed {
@@ -45,6 +50,7 @@ entity PatientMedications : cuid, managed {
     patient: Association to Users;
     amount: String;
     name: String;
+    sideeffects: String;
 }
 
 entity PainPoints : cuid, managed {
