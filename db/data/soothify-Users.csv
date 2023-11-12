@@ -1,0 +1,3 @@
+ID,createdAt,createdBy,modifiedAt,modifiedBy,firstname,lastname,email,passwordHash,isDoctor
+67068c01-afb2-4207-a612-2febe01ad9c0,,,,,Simon,Brebeck,simon.brebeck@sap.com,patient,false
+67068c01-afb2-4207-a612-2febe01ad9c1,,,,,Simon,Brebeck,simon.brebeck@rwth-aachen.de,doctor,true

@@ -1,0 +1,29 @@
+{
+  "name": "soothify-backend",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "dotenv": "^16.3.1",
+    "express": "^4",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@types/node": "^20.9.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "impl": "srv/custom-auth.js"
+      }
+    }
+  }
+}
