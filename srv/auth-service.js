@@ -22,6 +22,7 @@ module.exports = async function() {
         console.log(user[0])
 
         const token = jwt.sign({
+            ID: user[0].ID,
             email: user[0].email,
             firstname: user[0].firstname,
             lastname: user[0].lastname,
@@ -30,6 +31,7 @@ module.exports = async function() {
             expiresIn: "2h"
         })
         return {
+            ID: user[0].ID,
             email: user[0].email,
             firstname: user[0].firstname,
             lastname: user[0].lastname,
