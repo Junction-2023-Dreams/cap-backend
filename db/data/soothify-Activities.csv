@@ -1,1 +1,6 @@
-ID,createdAt,createdBy,modifiedAt,modifiedBy,name,description,startTime,location
+ID,createdAt,createdBy,modifiedAt,modifiedBy,name,description,startTime,location,imageUrl
+67068c01-afb2-4207-a612-2febe01ad9e1,,,,,Walk in the Park,Take a leisurely stroll in the local park to enjoy nature and light exercise,2023-11-12T09:00:00,Local Park,https://www.simonbrebeck.de/assets/junction/walking.jpg
+67068c01-afb2-4207-a612-2febe01ad9e2,,,,,Animal Therapy Session,Spend quality time cuddling with dogs from the local animal shelter,2023-11-13T15:30:00,Shelter for Homeless Animals,https://www.simonbrebeck.de/assets/junction/walk_dog.jpg
+67068c01-afb2-4207-a612-2febe01ad9e3,,,,,Art Therapy Workshop,Participate in an art therapy session to express emotions and reduce stress,2023-11-15T14:00:00,Community Center,https://www.simonbrebeck.de/assets/junction/art_therapy.jpg
+67068c01-afb2-4207-a612-2febe01ad9e4,,,,,Guided Meditation Class,Attend a guided meditation class to promote relaxation and mindfulness,2023-11-18T11:00:00,Wellness Center,https://www.simonbrebeck.de/assets/junction/meditation.jpg
+67068c01-afb2-4207-a612-2febe01ad9e5,,,,,Aquatic Exercise,Engage in low-impact aquatic exercises to improve flexibility and reduce pain,2023-11-20T10:30:00,Local Swimming Pool,https://www.simonbrebeck.de/assets/junction/swimming.jpg

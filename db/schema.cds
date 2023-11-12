@@ -24,6 +24,7 @@ entity Activities : cuid, managed {
     description: String;
     startTime: DateTime;
     location: String;
+    imageUrl: String;
     participations: Composition of ActivityParticipations on participations.activity = $self;
 }
 
@@ -42,6 +43,8 @@ entity Medications : cuid, managed {
 entity PatientMedications : cuid, managed {
     medication: Association to Medications;
     patient: Association to Users;
+    amount: String;
+    name: String;
 }
 
 entity PainPoints : cuid, managed {
